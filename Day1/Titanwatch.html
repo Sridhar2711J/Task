@@ -1,0 +1,288 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="./titan-logo.png">
+    <link rel="stylesheet" href="./Titanwatch.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>Titan: The Official Website for Titan</title>
+</head>
+<body>
+    <div class="header">
+        <marquee>Use Code NEW10 and get 10% OFF* on non-discounted Watches over Rs. 2499. Maximum Discount: Rs. 1200. T&C Apply*.</marquee>
+    </div>
+     <nav>
+        <div class="log">
+            <img src="./titan-logo.svg" alt="#titan-log">
+        </div>
+
+        <div class="search-bar">
+            <img class="search-bar-img" width="24" height="24" src="https://img.icons8.com/forma-light/24/search.png" alt="search"/>
+            <input type="search" placeholder="search titan">
+        </div>
+
+        <div class="function">
+            <div class="Home fun" onclick=MainPage() id="Home" style="display: block;">
+                <img width="32" height="32" src="https://img.icons8.com/sf-regular/32/home.png" alt="home"/>
+                <h4>Home</h4>
+            </div>
+            <div class="Account fun" onclick=logPage() style="display: none;" id="Account">
+                <img width="32" height="32" src="https://img.icons8.com/puffy/32/user.png" alt="user"/>
+                <h4>Account</h4>
+            </div>
+            <div class="wishlist fun">
+                <img width="32" height="32" src="https://img.icons8.com/windows/32/like--v1.png" alt="like--v1"/>
+                <h4>Wishlist</h4>
+            </div>
+            <div class="cart fun">
+                <img width="32" height="32" src="https://img.icons8.com/sf-regular/32/shopping-cart.png" alt="shopping-cart"/>
+                <h4>Cart</h4>
+            </div>
+            <div class="track-order fun">
+               <img width="32" height="32" src="https://img.icons8.com/forma-light/32/track-order.png" alt="track-order"/>
+               <h4>Track Order</h4>
+            </div>
+        </div>
+     </nav>
+     <div class="login" style="display: flex;" id="login">
+        <form class="login-contanier" action="#">
+            <h3>Login</h3>
+            <span id="msg"></span>
+            <div class="user">
+                <div class="user-name">
+                    <input type="email" class="user-input" placeholder="User Name" id="user-id" required>
+                    <i class="fa-solid fa-user"></i>
+                </div>
+                <div class="user-password">
+                    <input type="password" class="user-input" placeholder="Password" id="user-password" required>
+                    <i class="fa-solid fa-lock"></i>
+                </div>
+            </div>
+            <div class="show-password">
+                <input type="checkbox" id="show-password" onclick=pass()>
+                Show Password
+            </div>
+            <button id="login-btn" onclick=Login()>Login</button>
+
+            </form>
+     </div>
+     <div class="main-contaniner" id="main-contaniner" style="display: none;">
+     <div class="collation">
+        <p id="men-btn" onclick="manchage()">MEN</p>
+        <p id="women-btn" onclick="womenchage()">WOMEN</p>
+     </div>
+     <div class="men"  id="men" style="display: flex;">
+        <div class="watch">
+            <img src="./1578SM04_1.webp" alt="">
+            <p>4.4⭐</p>
+            <h3>Titan | Men's Watch</h3>
+            <p class="dls">Titan Quartz Multifunction Blue</p>
+            <h4>₹6,395</h4>
+            <i class="fa-regular fa-heart" id="non-wishlist" onclick=heart()></i>
+            <i class="fa-solid fa-heart wishlist" style="display: none;" id="wishlist" onclick=nonheart()></i>
+        </div>
+        <div class="watch">
+            <img src="./1825KM01_1.webp" alt="">
+            <p>4.3⭐</p>
+            <h3>Titan | Men's Watch</h3>
+            <p class="dls">Titan Karishma Quartz Analog Green</p>
+            <h4>₹3,215</h4>
+            <i class="fa-regular fa-heart" id="non-wishlist" onclick=heart()></i>
+            <i class="fa-solid fa-heart wishlist" style="display: none;" id="wishlist" onclick=nonheart()></i>
+        </div>
+        <div class="watch">
+            <img src="./1805NM02_1.jpg" alt="">
+            <p>4.4⭐</p>
+            <h3>Titan | Men's Watch</h3>
+            <p class="dls">Titan Quartz Analog with Day</p>
+            <h4>₹2,595</h4>
+            <i class="fa-regular fa-heart" id="non-wishlist" onclick=heart()></i>
+            <i class="fa-solid fa-heart wishlist" style="display: none;" id="wishlist" onclick=nonheart()></i>
+        </div>
+        <div class="watch">
+            <img src="./1733KL03_1.webp" alt="">
+            <p>4.4⭐</p>
+            <h3>Titan | Men's Watch</h3>
+            <p class="dls">Titan Minimals Quartz Analog</p>
+            <h4>₹4,245</h4>
+            <i class="fa-regular fa-heart" id="non-wishlist" onclick=heart()></i>
+            <i class="fa-solid fa-heart wishlist" style="display: none;" id="wishlist" onclick=nonheart()></i>
+        </div>
+        <div class="watch">
+            <img src="./1802NL02_1.webp" alt="">
+            <p>4.6⭐</p>
+            <h3>Titan | Men's Watch</h3>
+            <p class="dls">Titan Quartz Multifunction Blue</p>
+            <h4>₹6,395</h4>
+            <i class="fa-regular fa-heart" id="non-wishlist" onclick=heart()></i>
+            <i class="fa-solid fa-heart wishlist" style="display: none;" id="wishlist" onclick=nonheart()></i>
+        </div>
+        <div class="watch">
+            <img src="./1802SL11_1.jpg" alt="">
+            <p>4.5⭐</p>
+            <h3>Titan | Men's Watch</h3>
+            <p class="dls">Titan Quartz Multifunction Blue</p>
+            <h4>₹4,395</h4>
+            <i class="fa-regular fa-heart" id="non-wishlist" onclick=heart()></i>
+            <i class="fa-solid fa-heart wishlist" style="display: none;" id="wishlist" onclick=nonheart()></i>
+        </div>
+        <div class="watch">
+            <img src="./1805NM02_1.jpg" alt="">
+            <p>4.5⭐</p>
+            <h3>Titan | Men's Watch</h3>
+            <p class="dls">Titan Quartz Multifunction Blue</p>
+            <h4>₹6,195</h4>
+            <i class="fa-regular fa-heart" id="non-wishlist" onclick=heart()></i>
+            <i class="fa-solid fa-heart wishlist" style="display: none;" id="wishlist" onclick=nonheart()></i>
+        </div>
+        <div class="watch">
+            <img src="./1825SM11_1.webp" alt="">
+            <p>4.5⭐</p>
+            <h3>Titan | Men's Watch</h3>
+            <p class="dls">Titan Quartz Multifunction Blue</p>
+            <h4>₹1,395</h4>
+            <i class="fa-regular fa-heart" id="non-wishlist" onclick=heart()></i>
+            <i class="fa-solid fa-heart wishlist" style="display: none;" id="wishlist" onclick=nonheart()></i>
+        </div>
+     </div>
+     <div class="women" id="women" style="display: none;">
+        <div class="watch">
+            <img src="./w1.webp" alt="">
+            <p>4.4⭐</p>
+            <h3>Titan | Women's Watch</h3>
+            <p class="dls">Titan Quartz Multifunction Blue</p>
+            <h4>₹6,395</h4>
+            <i class="fa-regular fa-heart" id="non-wishlist" onclick=heart()></i>
+            <i class="fa-solid fa-heart wishlist" style="display: none;" id="wishlist" onclick=nonheart()></i>
+        </div>
+        <div class="watch">
+            <img src="./w2.webp" alt="">
+            <p>4.3⭐</p>
+            <h3>Titan | Women's Watch</h3>
+            <p class="dls">Titan Karishma Quartz Analog Green</p>
+            <h4>₹3,215</h4>
+            <i class="fa-regular fa-heart" id="non-wishlist" onclick=heart()></i>
+            <i class="fa-solid fa-heart wishlist" style="display: none;" id="wishlist" onclick=nonheart()></i>
+        </div>
+        <div class="watch">
+            <img src="./2601WM04_1.webp" alt="">
+            <p>4.4⭐</p>
+            <h3>Titan | Women's Watch</h3>
+            <p class="dls">Titan Quartz Analog with Day</p>
+            <h4>₹2,595</h4>
+            <i class="fa-regular fa-heart" id="non-wishlist" onclick=heart()></i>
+            <i class="fa-solid fa-heart wishlist" style="display: none;" id="wishlist" onclick=nonheart()></i>
+        </div>
+        <div class="watch">
+            <img src="./2642SM02_1.webp" alt="">
+            <p>4.4⭐</p>
+            <h3>Titan | Women's Watch</h3>
+            <p class="dls">Titan Minimals Quartz Analog</p>
+            <h4>₹4,245</h4>
+            <i class="fa-regular fa-heart" id="non-wishlist" onclick=heart()></i>
+            <i class="fa-solid fa-heart wishlist" style="display: none;" id="wishlist" onclick=nonheart()></i>
+        </div>
+        <div class="watch">
+            <img src="./2642WM01_1.webp" alt="">
+            <p>4.6⭐</p>
+            <h3>Titan | Women's Watch</h3>
+            <p class="dls">Titan Quartz Multifunction Blue</p>
+            <h4>₹6,395</h4>
+            <i class="fa-regular fa-heart" id="non-wishlist" onclick=heart()></i>
+            <i class="fa-solid fa-heart wishlist" style="display: none;" id="wishlist" onclick=nonheart()></i>
+        </div>
+        <div class="watch">
+            <img src="./2727WM01_1.webp" alt="">
+            <p>4.5⭐</p>
+            <h3>Titan | Women's Watch</h3>
+            <p class="dls">Titan Quartz Multifunction Blue</p>
+            <h4>₹4,395</h4>
+            <i class="fa-regular fa-heart" id="non-wishlist" onclick=heart()></i>
+            <i class="fa-solid fa-heart wishlist" style="display: none;" id="wishlist" onclick=nonheart()></i>
+        </div>
+        <div class="watch">
+            <img src="./68042SM01_1.jpg" alt="">
+            <p>4.5⭐</p>
+            <h3>Titan | Women's Watch</h3>
+            <p class="dls">Titan Quartz Multifunction Blue</p>
+            <h4>₹6,195</h4>
+            <i class="fa-regular fa-heart" id="non-wishlist" onclick=heart()></i>
+            <i class="fa-solid fa-heart wishlist" style="display: none;" id="wishlist" onclick=nonheart()></i>
+        </div>
+        <div class="watch">
+            <img src="./95278WM01_1.webp" alt="">
+            <p>4.5⭐</p>
+            <h3>Titan | Women's Watch</h3>
+            <p class="dls">Titan Quartz Multifunction Blue</p>
+            <h4>₹1,395</h4>
+            <i class="fa-regular fa-heart" id="non-wishlist" onclick=heart()></i>
+            <i class="fa-solid fa-heart wishlist" style="display: none;" id="wishlist" onclick=nonheart()></i>
+        </div>
+     </div>
+     <footer>
+        <div class="footer-contaniner">
+            <div class="customer-service">
+                <h3>CUSTOMER SERVICE</h3>
+                <h5>Payment options</h5>
+                <h5>Track Order</h5>
+                <h5>Encircle Program</h5>
+                <h5>Find Titan World Stores</h5>
+            </div>
+            <div class="conatct-us">
+                <h3>CONTACT US</h3>
+                <h5>1800-266-0123</h5>
+                <h5>customercare@titan.co.in</h5>
+                <h5>Help & Contact</h5>
+                <h5>FAQs</h5>
+            </div>
+            <div class="about-titan">
+                <h3>ABOUT TITAN</h3>
+                <h5>Brand Protection</h5>
+                <h5>Corporate</h5>
+                <h5>Careers</h5>
+                <h5>Blog</h5>
+            </div>
+            <div class="download">
+                <h3>Download Titan World App</h3>
+                <div class="dow-img">
+                    <a class="gtm-footer-link" href="https://apps.apple.com/us/app/world-of-titan/id1351637761?ls=1" target="_blank"><img class="app-download appstore-img" src="https://www.titan.co.in/on/demandware.static/-/Library-Sites-TitanSharedLibrary/default/dw435df752/images/footer/Group 15609.png" alt="appstore"></a>
+                    <a class="gtm-footer-link" href="https://play.google.com/store/apps/details?id=com.titancompany.tx37consumerapp&amp;cm_sp=Homepage-_-footer-_-AndroidAppLogo" target="_blank"><img class="app-download" src="https://www.titan.co.in/on/demandware.static/-/Library-Sites-TitanSharedLibrary/default/dwac46a6ed/images/footer/Group 15610@2x.png" alt="sdf"></a>
+                </div>
+                <div class="soical">
+                    <h3>Follow Us With</h3>
+                    <div class="soical-media">
+                        <a class="gtm-footer-link open-new-window" href="https://www.facebook.com/titanwatches"><img alt="fb" class="social-fb" src="https://www.titan.co.in/on/demandware.static/-/Library-Sites-TitanSharedLibrary/default/dw1803b970/images/footer/facebook.svg"></a>
+                        <a class="gtm-footer-link open-new-window" href="https://www.instagram.com/titanwatchesindia"> <img alt="instagram" class="social-insta" src="https://www.titan.co.in/on/demandware.static/-/Library-Sites-TitanSharedLibrary/default/dw3c0d8bc6/images/footer/instagram.svg"></a>
+                        <a class="gtm-footer-link open-new-window" href="https://twitter.com/titanwatches"> <img alt="twitter" class="social-twitter" src="https://www.titan.co.in/on/demandware.static/-/Library-Sites-TitanSharedLibrary/default/dw812cf34d/images/footer/Footer-Twitter_White%20%281%29.svg" title=""></a>
+                        <a class="gtm-footer-link open-new-window" href="https://www.youtube.com/@titanwatchesindia"> <img alt="youtube" class="social-youtube" src="https://www.titan.co.in/on/demandware.static/-/Library-Sites-TitanSharedLibrary/default/dwd1278123/images/footer/youtube.svg"></a>
+                    </div>
+                </div>
+                <h3>Want Help? <a class="click" href="#">Click Here</a>To Chat With Us On <img alt="" class="Whatsapp" src="https://www.titan.co.in/on/demandware.static/-/Library-Sites-TitanSharedLibrary/default/dw20817314/images/footer/Whatsapp.svg" loading="lazy" title=""></h3>
+                <h5>Blog</h5>
+            </div>
+        </div>
+        <hr>
+        <div class="payment-copy">
+            <div class="row">
+			<img class="p-visa col-3 col-md-1 payment-img" src="https://www.titan.co.in/on/demandware.static/-/Library-Sites-TitanSharedLibrary/default/dw7331dfe9/images/footer/Icon%20simple-visa.svg" loading="lazy" alt="mail">
+			<img class="p-mastercard col-3 col-md-1 payment-img" src="https://www.titan.co.in/on/demandware.static/-/Library-Sites-TitanSharedLibrary/default/dw80575962/images/footer/Icon payment-mastercard-alt.svg" loading="lazy" alt="mail">
+			<img class="p-paypal col-3 col-md-1 payment-img" src="https://www.titan.co.in/on/demandware.static/-/Library-Sites-TitanSharedLibrary/default/dwcb6903ec/images/footer/Icon payment-paypal.svg" loading="lazy" alt="mail">
+			<img class="p-american col-3 col-md-1 payment-img" src="https://www.titan.co.in/on/demandware.static/-/Library-Sites-TitanSharedLibrary/default/dwf004a14c/images/footer/american-express-1.svg" loading="lazy" alt="mail">
+			<img class="p-dinersclub col-3 col-md-1 payment-img" src="https://www.titan.co.in/on/demandware.static/-/Library-Sites-TitanSharedLibrary/default/dwa77efe0d/images/footer/diners-club-logo3-1.svg" loading="lazy" alt="mail">
+			<img class="p-rupay col-3 col-md-1 payment-img" src="https://www.titan.co.in/on/demandware.static/-/Library-Sites-TitanSharedLibrary/default/dw4aef4129/images/footer/rupay.svg" loading="lazy" alt="mail">
+			<img class="p-icici col-3 col-md-1 payment-img" src="https://www.titan.co.in/on/demandware.static/-/Library-Sites-TitanSharedLibrary/default/dw0ba79c12/images/footer/icici-1.svg" loading="lazy" alt="mail">
+			<img class="p-axis col-3 col-md-1 payment-img" src="https://www.titan.co.in/on/demandware.static/-/Library-Sites-TitanSharedLibrary/default/dw8b4d086c/images/footer/axis-bank-logo-1.svg" loading="lazy" alt="mail">
+		</div>
+            <div class="copy-right">
+                <h5>© 2025 Titan Company Limited. All Rights Reserved.</h5>
+                <h5>Terms & Conditions | Privacy Policy | Wearable Privacy Policy | Warranty Policy</h5>
+            </div>
+        </div>
+     </footer>
+     </div>
+     
+    
+     <script src="./Titanwatch.js"></script>
+</body>
+</html>
